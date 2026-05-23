@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Flight - Steve Airlines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">✈️ Steve Airlines</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planes.html">Our Fleet</a></li>
+          <li><a href="booking.html">Book a Flight</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Book Your Flight</h1>
+      <p>Secure your seat on your next adventure</p>
+    </section>
+
+    <section class="content-section">
+      <h2 class="section-title">Flight Booking</h2>
+      <form>
+        <div class="form-group">
+          <label for="trip-type">Trip Type</label>
+          <select id="trip-type" name="trip-type" required>
+            <option value="">Select...</option>
+            <option value="oneway">One Way</option>
+            <option value="roundtrip">Round Trip</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="from">From</label>
+            <input type="text" id="from" name="from" placeholder="Departure City" required>
+          </div>
+          <div class="form-group">
+            <label for="to">To</label>
+            <input type="text" id="to" name="to" placeholder="Destination City" required>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="depart">Departure Date</label>
+            <input type="date" id="depart" name="depart" required>
+          </div>
+          <div class="form-group">
+            <label for="return">Return Date</label>
+            <input type="date" id="return" name="return">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="passengers">Number of Passengers</label>
+            <select id="passengers" name="passengers" required>
+              <option value="">Select...</option>
+              <option value="1">1 Passenger</option>
+              <option value="2">2 Passengers</option>
+              <option value="3">3 Passengers</option>
+              <option value="4">4 Passengers</option>
+              <option value="5">5 Passengers</option>
+              <option value="6">6+ Passengers</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="class">Cabin Class</label>
+            <select id="class" name="class" required>
+              <option value="">Select...</option>
+              <option value="economy">Economy</option>
+              <option value="business">Business</option>
+              <option value="first">First Class</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Search Flights</button>
+      </form>
+    </section>
+
+    <section class="content-section">
+      <h2 class="section-title">Available Flights</h2>
+      <p style="text-align: center; color: #999; font-style: italic;">
+        Enter your travel details above to see available flights
+      </p>
+    </section>
+
+    <section class="content-section text-center">
+      <h3>Need Help?</h3>
+      <p>If you have any questions about booking, please don't hesitate to contact our team.</p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Steve Airlines. All rights reserved.</p>
+    <p>Email: info@steveairlines.com | Phone: 1-800-STEVE-AIR</p>
+  </footer>
+</body>
+</html>

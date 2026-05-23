@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Steve Airlines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">✈️ Steve Airlines</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planes.html">Our Fleet</a></li>
+          <li><a href="booking.html">Book a Flight</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Contact Corporate</h1>
+      <p>We'd love to hear from you</p>
+    </section>
+
+    <section class="content-section">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+        <div>
+          <h2 class="section-title" style="text-align: left;">Get in Touch</h2>
+          <div style="margin-top: 2rem;">
+            <h3 style="color: #0066cc; margin-bottom: 0.5rem;">Phone</h3>
+            <p><strong>1-800-STEVE-AIR</strong></p>
+            <p style="color: #666; font-size: 0.9rem;">Available 24/7 for reservations and inquiries</p>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3 style="color: #0066cc; margin-bottom: 0.5rem;">Email</h3>
+            <p><strong>info@steveairlines.com</strong></p>
+            <p style="color: #666; font-size: 0.9rem;">We'll respond within 24 hours</p>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3 style="color: #0066cc; margin-bottom: 0.5rem;">Corporate Office</h3>
+            <p><strong>Steve Airlines Corporate Headquarters</strong></p>
+            <p style="color: #666;">
+              123 Aviation Boulevard<br>
+              Sky City, SC 12345<br>
+              United States
+            </p>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3 style="color: #0066cc; margin-bottom: 0.5rem;">Hours</h3>
+            <p style="color: #666;">
+              Monday - Friday: 9:00 AM - 6:00 PM (EST)<br>
+              Saturday - Sunday: 10:00 AM - 4:00 PM (EST)
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section-title" style="text-align: left;">Contact Form</h2>
+          <form style="margin-top: 0; box-shadow: none; padding: 0;">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject...</option>
+                <option value="reservation">Flight Reservation</option>
+                <option value="complaint">Complaint</option>
+                <option value="partnership">Business Partnership</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Steve Airlines. All rights reserved.</p>
+    <p>Email: info@steveairlines.com | Phone: 1-800-STEVE-AIR</p>
+  </footer>
+</body>
+</html>
